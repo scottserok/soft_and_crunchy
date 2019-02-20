@@ -1,0 +1,13 @@
+/docs/
+/lib/
+/bin/
+/.shards/
+*.dwarf
+
+# executables
+web
+sidekiq
+
+# VIM
+*.swp
+*.swo
