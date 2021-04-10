@@ -1,4 +1,4 @@
-name: plumbing
+name: worker
 version: 0.1.0
 
 authors:
@@ -6,13 +6,13 @@ authors:
 
 targets:
   plumbing:
-    main: src/plumbing.cr
+    main: src/worker.cr
 
 dependencies:
   sidekiq:
     github: mperham/sidekiq.cr
     branch: master
 
-crystal: 0.27.2
+crystal: 1.0.0
 
 license: MIT

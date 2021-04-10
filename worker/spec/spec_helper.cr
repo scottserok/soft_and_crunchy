@@ -1,3 +1,3 @@
 require "spec"
 require "sidekiq"
-require "../src/plumbing"
+require "../src/worker"

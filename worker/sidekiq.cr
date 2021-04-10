@@ -1,5 +1,5 @@
 require "sidekiq/cli"
-require "./src/plumbing"
+require "./src/worker"
 
 cli = Sidekiq::CLI.new
 server = cli.configure do |config|
