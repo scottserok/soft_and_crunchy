@@ -1,14 +1,14 @@
-.PHONY : all clean test
+.PHONY : build clean test
 
-all : shard.lock sidekiq web test
+build : test bin/sidekiq bin/web
 
 shard.lock : shard.yml
 	shards install --ignore-crystal-version
 
-sidekiq : sidekiq.cr
+bin/sidekiq : sidekiq.cr
 	crystal build sidekiq.cr -o bin/sidekiq
 
-web : web.cr
+bin/web : web.cr
 	crystal build web.cr -o bin/web
 
 clean :
