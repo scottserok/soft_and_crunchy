@@ -5,24 +5,18 @@ written in Crystal.
 
 ## Installation
 
-In the web directory, following the README or run `bundle install`.
+In the web directory, run `bundle install` to install dependencies.
 
-In the plumbing directory, follow the README or run `make`.
+In the worker directory, run `make` to build the binaries.
 
 ## Usage
 
-To start the Ruby web server: `cd web && rackup`.
+To start the Ruby web server: `cd web && rackup`
 
-To start the Sidekiq server: `cd plumbing && ./sidekiq`.
+To start the Sidekiq server: `cd worker && bin/sidekiq`
 
-## Contributing
+To start the Sidekiq web dashboard: `cd worker && bin/web`
 
-1. Fork it (<https://github.com/your-github-user/plumbing/fork>)
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create a new Pull Request
-
-## Contributors
-
-- [Scott Serok](https://github.com/scottserok) - creator and maintainer
+Open up http://localhost:9292 to have the Ruby web process queue up a job in Redis.
+The job will be processed by the Crystal worker. Open up http://localhost:3000 to
+see the Sidekiq dashboard update the number of jobs processed.
