@@ -34,9 +34,9 @@ shards:
 
   redis:
     git: https://github.com/stefanwille/crystal-redis.git
-    version: 2.6.0
+    version: 2.7.0
 
   sidekiq:
     git: https://github.com/mperham/sidekiq.cr.git
-    version: 0.7.0+git.commit.09ba32a4cdba93355486ec4b008ff3c585b3164c
+    version: 0.7.0
 

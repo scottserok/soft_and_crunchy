@@ -11,7 +11,6 @@ targets:
 dependencies:
   sidekiq:
     github: mperham/sidekiq.cr
-    branch: master
 
 crystal: 1.0.0
 
