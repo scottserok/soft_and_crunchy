@@ -1,7 +1,7 @@
 require 'sinatra'
 require 'sidekiq'
 
-# Plumbing::Foo is implemented in our Crystal server, but we must give Ruby the
+# Worker::Foo is implemented in our Crystal server, but we must give Ruby the
 # minimum definition for the Sidekiq client to push the JSON payload to Redis.
 module Worker
   class Foo

@@ -11,9 +11,9 @@ $ make
 
 ## Usage
 
-To start the Sidekiq server: `./sidekiq`
+To start the Sidekiq server: `bin/sidekiq`
 
-To start the Sidekiq Web server: `./web`
+To start the Sidekiq Web server: `bin/web`
 
 ## Testing
 
