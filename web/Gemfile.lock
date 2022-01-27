@@ -7,9 +7,9 @@ GEM
     rack (2.2.3)
     rack-protection (2.1.0)
       rack
-    redis (4.2.5)
+    redis (4.5.1)
     ruby2_keywords (0.0.4)
-    sidekiq (6.2.1)
+    sidekiq (6.4.0)
       connection_pool (>= 2.2.2)
       rack (~> 2.0)
       redis (>= 4.2.0)
